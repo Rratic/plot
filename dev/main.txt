@@ -1,0 +1,139 @@
+World Version 2.0.0
+Platform Info:
+  OS: Paradise
+  WORD_SIZE: 170141183460469231731687303715884105728
+
+help?> Take your chance.
+
+world> run(`telnet www.un.org`)
+IPv6 main servers failed to respond (3).
+  - Beijing Internet Institute [240c:f:1:22::6]
+  - WIDE Project [2001:200:1d9::35]
+  - TIISF [2001:4f8:3:1006::1:4]
+IPv6 copilot servers failed to respond (22).
+  - AS59715 [2a02:cdc5:9715:0:185:5:203:53]
+  - Dahu Group [2001:4b98:dc2:45:216]
+  - Bond Intemet Systems [2a02:2810:0:405::250]
+  - MSK-IX [2001:6d0:6d06::53]
+  - CERT Austris [2a01:4f8:161:6106:1::10]
+  - ERNET Inda [2001:e301c1e:1::333]
+  - dnsworkshop/informnis [2a03:4000:5:2c3::53]
+  - Dahu Group (2) [2001:67c:217c:6::2]
+  - Aqua Ray SAS [2a02:ec0:200::1]
+  - SWITCH [2001:620:0:ff::29]
+  - CHILENIC [2001:1398:1:21::8001]
+  - Yeti-Shanghai [240e:eb:8001:e01::53]
+  - Yeti-Chengdu [2001:da8:268:4200::6]
+  - Yeti-Guangzhou [240e:97c:38:201::44]
+  - Yeti-ZA [2c0f:f530::6]
+  - Yeti-AU [72401:c900:1401:3b:c::6]
+  - ERNET iNDIA [2001:e30:187d::333]
+  - ERNET iNDIA (2) [2001:e30:1c1e:10::333]
+  - dnsworkshop/informnis (2) [2001:19f0:0:1133::53]
+  - Monshouwer Internet Diensten [2a02:990:100:b01::53:0]
+  - DATEV [2a00:e50:f15c::1000::1:53]
+  - JHCLOOS [2001::19f0:5401:1c3::53]
+
+IPv4 main server failed to respond (1).
+  - A [198.41.0.4]
+IPv4 copilot servers failed to respond (12).
+  - B [128.9.0.107]
+  - C [192.33.4.12]
+  - D [128.8.10.90]
+  - E [192.203.130.10]
+  - F [192.5.5.241]
+  - G [192.112.36.4]
+  - H [128.63.2.53]
+  - I [192.36.148.17]
+  - J [192.58.128.30]
+  - K [192.0.14.129]
+  - L [198.32.64.12]
+  - M [202.12.27.33]
+
+help?> Find yourself.
+
+world> me
+Entity()
+
+world> fieldnames(Entity)
+(:uuid, :solidset, :willset)
+
+world> me.uuid
+UUID("9d17c602-7472-5fdc-a520-3554ab30ceb7")
+
+world> willset=me.willset; typeof(willset)
+Vector{Pair{Situation, FreeWill}}
+
+world> will=last(willset).second
+FreeWill()
+
+world> fieldnames(FreeWill)
+(:code, :memory)
+
+world> mem=will.memory; typeof(mem)
+MemorySet
+
+world> import MemoryTools as mt
+mt
+
+world> mt.init()
+Initalized successfully.
+
+world> mt.check(mem)
+Memory (editted once)
+
+world> x=mt.pop()
+id = 1
+plot = [ adj(&smile, 1) ]
+
+world> x=mt.pop()
+id = 2
+plot = [
+  adj(
+    instanceof(&Entity),
+    &white,
+  )
+]
+
+world> ent=x["plot"][1].args[1]
+Entity()
+
+world> send(ent, "Who are you?", MIME("text/plain"), Language("en"))
+┌ Error:
+└ Failed to modify.
+
+world> x=mt.pop()
+id = 3
+
+[file]
+par = <foundation>
+nid = 1
+object_class = "Unnecessary"
+
+[file.default]
+mime = MIME("raw/concept")
+language = "en"
+
+[file.special_containment_procedures]
+containment = nothing
+action = () -> begin
+  if check(&occur, this)
+    foundation = this.par
+    personnel = ∪({|&sapient}, {|&isalive}, {foundation...}, {i | extract(foundation, &classify)(i) != 0})
+    [...]
+    do(&release, find(foundation, &nid, 514), &Earth)
+  end
+end
+
+[file.description]
+tag = ["pre-occurrence"]
+recognize = () -> begin
+  surface = ∪({&Earth...}, {|&visible}, {|&land})
+  @check @process [
+    [...]
+  ]
+  @check time(do(&die, ∪({|&life}, {|in(&Earth)}))) - time(this.onbegin) = 24 * &hour
+end
+
+[file.attached]
+communications = [<file 001-A>]
