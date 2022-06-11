@@ -1,0 +1,15 @@
+World Version 2.0.0
+Platform Info:
+  OS: Paradise
+  WORD_SIZE: 170141183460469231731687303715884105728
+
+help?> 欢迎开发者
+
+world> sc=world.outline
+6-element Vector{Pair{Time, String}}:
+  <~ 120000y-> => "Oblitus, antimemetics, war"
+  <1/ 15:00> => "visit, 9429"
+  <1/ 17:00> => "3125"
+  <2/ 3:00> => "mirror, London"
+  <2/ 7:00> => "Lily's proposal"
+  <2/ 22:00> => "history, book"
