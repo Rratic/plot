@@ -12,3 +12,4 @@
 - [《逆模因部 系列》](http://scp-wiki-cn.wikidot.com/antimemetics-division-hub)
 - [《群星不待》](http://scp-wiki-cn.wikidot.com/the-stars-do-not-wait-for-you)
 - 张岱《自为墓志铭》
+- [《镜像伦敦》](http://scp-wiki-cn.wikidot.com/scp-1678)
