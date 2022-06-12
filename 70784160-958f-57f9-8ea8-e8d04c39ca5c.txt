@@ -8,8 +8,40 @@ help?> 欢迎开发者
 world> sc=world.outline
 6-element Vector{Pair{Time, String}}:
   <~ 120000y-> => "Oblitus, antimemetics, war"
-  <1/ 15:00> => "visit, 9429"
+  <1/ 13:03 ~ 13:27> => "visit, 9429"
   <1/ 17:00> => "3125"
   <2/ 3:00> => "mirror, London"
   <2/ 7:00> => "Lily's proposal"
   <2/ 22:00> => "history, book"
+
+world> world.languages[:Oblitus].manual()
+语言呈现块状结构，基本结构是"块头[信息1&信息2...]"
+
+块头列表
+%         - 存在（目标）
+|         - 加以修饰（目标，信息...）
+:         - 属性陈述
+H         - 组合
+t         - 静态语义陈述
+z         - 动态语义陈述
+
+静态语义列表
+|         - 单位元
+||        - 对（pair）
+cedfu     - 混沌
+etha      - 生成者
+fjll      - 战争
+fkll      - 摧毁
+o         - 零元
+
+修饰符列表
+>         - 单向物的顺向
+<         - 单向物的逆向
+^         - 提升
+!         - 语义共轭
+u         - 并列标记
+y         - 群体标记
+
+world> atexit() do
+         run(pipeline(world,"dev/null"))
+       end
