@@ -1,4 +1,4 @@
-World Version 2.0.0
+Library Version 2.0.0
 Platform Info:
   OS: Paradise
   WORD_SIZE: 170141183460469231731687303715884105728
@@ -52,20 +52,17 @@ IPv4 辅根服务器未响应
 
 help?> 加密组件初始化完成。请触及一切。
 
-world> me
+world> lib
 实体
 
 world> fieldnames(Entity)
 (:uuid, :solidset, :willset)
 
-world> me.uuid
-UUID("9d17c602-7472-5fdc-a520-3554ab30ceb7")
-
-world> willset=me.willset; typeof(willset)
+world> willset=lib.willset; typeof(willset)
 Vector{FreeWill}
 
 world> will=last(willset)
-标准观察者自由意志
+标准观察者组件
 
 world> fieldnames(FreeWill)
 (:code, :memory)
@@ -83,47 +80,8 @@ world> mt.check(mem)
 Memory (已修改一次)
 
 world> x=mt.pop()
-id = 1
-plot = [ adj(&smile, 1) ]
+attached = ["54837794-50cc-50a1-bfde-0134d93f0d01.txt", "dc0244c6-6daf-5a07-bb3c-f779f1711571.txt"]
 
-world> x=mt.pop()
-id = 2
-attached = ["54837794-50cc-50a1-bfde-0134d93f0d01.txt"]
-
-world> download(x["attached"][0])
+world> download(x["attached"])
 ┌ Info:
 └ 文件已创建
-
-world> x=mt.pop()
-id = 3
-
-[file]
-par = <foundation>
-nid = 1
-object_class = "Unnecessary"
-attached = [<file 001-A>]
-
-[file.default]
-mime = MIME("raw/concept")
-language = "en"
-
-[file.special_containment_procedures]
-containment = nothing
-action = () -> begin
-  if check(&occur, this)
-    foundation = this.par
-    personnel = ∪({|&sapient}, {|&isalive}, {foundation...}, {i | extract(foundation, &classify)(i) != 0})
-    [...]
-    do(&release, find(foundation, &nid, 514), &Earth)
-  end
-end
-
-[file.description]
-tag = ["pre-occurrence"]
-recognize = () -> begin
-  surface = ∪({&Earth...}, {|&visible}, {|&land})
-  @check @process [
-    [...]
-  ]
-  @check time(do(&die, ∪({|&life}, {|in(&Earth)}))) - time(this.onbegin) = 24 * &hour
-end
