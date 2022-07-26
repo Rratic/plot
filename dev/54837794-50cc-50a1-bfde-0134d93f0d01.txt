@@ -55,15 +55,15 @@ dc0244c6 : 雨会停的，然后是新生。
 54837794 : ……先回站点，还是……
 < dc0244c6 尝试联系O5-8 >
 < dc0244c6 通过了安保验证 >
-dc0244c6 : 一次模因复合性/Keter级世界末日情景将在17点整发生。请把我们送至海德公园。
+dc0244c6 : 5LiA5qyh5qih5Zug5aSN5ZCI5oCnL0tldGVy57qn5LiW55WM5pyr5pel5oOF5pmv5bCG5ZyoMTfngrnmlbTlj5HnlJ/jgILor7fmiormiJHku6zpgIHoh7Pmtbflvrflhazlm63jgII=
 < dc0244c6 切断了连接 >
 54837794 : 我记得我才是站点主管啊
 [环境]
 直流电奇术发生装置启动
 ┌ Info: 启动参数
-│   v = NaN
-│   λ = NaN
-└   θ = NaN
+│   v = (:layout, (:t, 11, 0.3e7))
+│   λ = 2.31e-13
+└   θ = 1e-4
 ┌ Warning: 空间展开受阻
 └@ Main fork()
 [ Info: 发生成功
@@ -78,3 +78,4 @@ dc0244c6 : 一次模因复合性/Keter级世界末日情景将在17点整发生�
 54837794 : 智人并不是人类的全部……所以听完广播才能进的设置是谁发明的？！
 dc0244c6 : 行了行了，我们过来是有正事的。
 54837794 : ？文档里并没有写什么特别的东西啊？
+dc0244c6 : 夜光之珠，不必出于孟津之河；盈握之璧，不必采于昆仑之山。
